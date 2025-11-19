@@ -1,6 +1,6 @@
 import sys
 if len(sys.argv) != 4:
-    print("Usage: python login_validation.py <mobile> <email> <password>")
+    print("Usage: python login_validation.py 1234567890 anjum@gmail.com 12345")
     sys.exit()
     mobile = sys.argv[1]
     email = sys.argv[2] 
