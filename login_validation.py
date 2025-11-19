@@ -1,17 +1,19 @@
-import sys
-if len(sys.argv) != 4:
-    print("Usage: python login_validation.py 1234567890 anjum@gmail.com 12345")
-    sys.exit()
+ import sys
+
+print("login validation program")
+
+# If arguments are given
+if len(sys.argv) == 4:
     mobile = sys.argv[1]
-    email = sys.argv[2] 
+    email = sys.argv[2]
     password = sys.argv[3]
-    print("login validation program")
-    #validation
-    valid_mobile = "1234567890"
-    valid_email = "user@gmail.com"
-    valid_password = "admin123"
-    if (mobile == valid_mobile and email == valid_email and password == valid_password):
-        print("Login Successful") 
-    else:
-        print("Invalid Login credientials")
-        
+else:
+    # default values for Jenkins
+    mobile = "9999999999"
+    email = "default@gmail.com"
+    password = "admin123"
+
+print("Mobile:", mobile)
+print("Email:", email)
+print("Password:", password)
+
